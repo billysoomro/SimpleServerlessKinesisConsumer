@@ -1,0 +1,27 @@
+
+{
+    "Information" : [
+        "This file provides default values for the deployment wizard inside Visual Studio and the AWS Lambda commands added to the .NET Core CLI.",
+        "To learn more about the Lambda commands with the .NET Core CLI execute the following command at the command line in the project root directory.",
+        "dotnet lambda help",
+        "All the command line options for the Lambda command can be specified in this file."
+    ],
+    "profile"     : "MainAdminUser",
+    "region"      : "eu-west-2",
+    "configuration" : "Release",
+    "function-runtime" : "dotnet8",
+    "function-memory-size" : 256,
+    "function-timeout"     : 30,
+    "function-handler"     : "SimpleServerlessKinesisConsumer::SimpleServerlessKinesisConsumer.Function::FunctionHandler",
+    "function-name"        : "SimpleServerlessKinesisConsumer",
+    "function-description" : "A function that acts as a Kinesis Data Streams Consumer",
+    "function-role"        : "arn:aws:iam::637423394203:role/lambda-role-for-s3-access",
+    "framework"            : "net8.0",
+    "package-type"         : "Zip",
+    "function-architecture" : "x86_64",
+    "function-subnets"      : "subnet-0cc5eb8e0c5215203,subnet-0026bea1bf6503a6f",
+    "function-security-groups" : "sg-075a9a1576bb6a757",
+    "tracing-mode"             : "PassThrough",
+    "environment-variables"    : "",
+    "image-tag"                : ""
+}
